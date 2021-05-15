@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:25px;
+  }
+  body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .header{
+    height: 10vh;
+    text-align: center;
+    color: #000;
+    padding-top: 2vh;
+    background-color: #EFEFEF;
+  }
+  .footer{
+    height: 10vh;
+    text-align: center;
+    color: #333;
+    font-size: .5rem;
+  }
+  .main-container{
+    height:80vh;
+    display:grid;
+  }
+  .grid-container{
+    display:grid;
+  }
+  .grid-item{
+    position: relative;
+  }
+  .grid-item span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-container{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .btn{
+    background-color: #2B8EAD;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    -moz-box-shadow: 1px 3px 7px #102328;
+    -webkit-box-shadow: 1px 3px 7px #102328;
+    box-shadow: 1px 3px 7px #102328;
+    cursor: pointer;
+    font-size: .65rem;
+    padding: 10px;
+    margin: 10px;
+  }
+   /* Desktop view*/
+  @media only screen and (min-width: 960px) {
+      .header{
+        color: #000;
+        background-color: #EFEFEF;
+      }
+      .footer{
+        background-color: #EFEFEF;
+      }
+      .main-container{
+        grid-template-columns: 65% 35%;
+        justify-content: center;
+        background-color: #EFEFEF;
+      }
+      .grid-container{
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 33%);
+        justify-content: start;
+        align-content: top;
+        grid-gap: 0px;
+      }
+      .grid-item{
+        background-color:#ccc;
+        color:#000;
+        padding:10px;
+      }
+      .grid-item span{
+        font-size: 3rem;
+        color: #fff;
+      }
+      .btn-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-around;
+        padding: 20px;
+      }
+    .item-2, .item-4{
+        background-color: #2B8EAD;
+    }
+    .item-3, .item-5, .item-9{
+        background-color: #2F454E;
+    }
+    .item-1,.item-8{
+        background-color: #72C3DC;
+    }
+    .item-6,.item-7{
+        background-color: #BFBFBF;
+    }
+  }
+
+  /* Medium Device view*/
+  @media only screen and (min-width: 576px) and (max-width: 959px) {
+    .header{
+      color: #000;
+      background-color: #EFEFEF;
+    }
+    .footer{
+      background-color: #EFEFEF;
+    }
+    .main-container{
+      grid-template-columns: 70% 30%;
+      justify-content: center;
+      background-color: #EFEFEF;
+    }
+    .grid-container{
+      grid-template-columns: repeat(3, 33%);
+      grid-template-rows: repeat(3, 33%);
+      justify-content: start;
+      align-content: top;
+      grid-gap: 0px;
+    }
+    .grid-item{
+      background-color:#ccc;
+      color:#000;
+      padding:10px;
+    }
+    .grid-item span{
+      font-size: 3rem;
+      color: #fff;
+    }
+    .btn-container{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: space-around;
+      padding: 20px;
+    }
+  .item-2, .item-4{
+      background-color: #2B8EAD;
+  }
+  .item-3, .item-5, .item-9{
+      background-color: #2F454E;
+  }
+  .item-1,.item-8{
+      background-color: #72C3DC;
+  }
+  .item-6,.item-7{
+      background-color: #BFBFBF;
+  }
+}
+
+  /* Mobile view*/
+  @media only screen and (min-width: 375px) and (max-width: 575px) {
+    body{
+        height: 100vh;
+    } 
+    .header{
+        color: #fff;
+        background-color: #000;
+      }
+      .main-container{
+        border:none;
+        grid-template-columns: 100%;
+        justify-content: start;
+        align-items: start;
+        background-color: #EFEFEF;
+      }
+      .grid-container{
+        grid-gap: 3px;
+        grid-row: 2;
+        padding: 0px 20px;
+      }
+      .grid-item{
+        background-color:#ccc;
+        color:#000;
+        padding:20px;
+        position: relative;
+        
+      }
+      .grid-item span{
+        font-size: 1rem;
+        color: #000;
+      }
+      .btn-container{
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        grid-row: 1;
+      } 
+      .btn{
+        flex-basis: 30%;
+      }
+    .item-2, .item-4{
+        border-left: 5px solid #2B8EAD;
+    }
+    .item-3, .item-5, .item-9{
+        border-left: 5px solid #2F454E;
+    }
+    .item-1,.item-8{
+        border-left: 5px solid #72C3DC;
+    }
+    .item-6,.item-7{
+        border-left: 5px solid #BFBFBF;
+    }
+  }
+  
