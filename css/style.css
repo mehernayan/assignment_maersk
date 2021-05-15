@@ -106,7 +106,7 @@
   }
 
   /* Medium Device view*/
-  @media only screen and (min-width: 576px) and (max-width: 959px) {
+  @media only screen and (min-width: 576px) and (max-width: 960px) {
     .header{
       color: #000;
       background-color: #EFEFEF;
@@ -156,7 +156,7 @@
 }
 
   /* Mobile view*/
-  @media only screen and (min-width: 375px) and (max-width: 575px) {
+  @media only screen and (min-width: 375px) and (max-width: 576px) {
     body{
         height: 100vh;
     } 
